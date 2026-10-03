@@ -6,21 +6,21 @@
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-<meta name="theme-color" content="#6b0f1a">
+<meta name="theme-color" content="#46739e">
 <title>for you</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,500;1,600&family=Caveat:wght@500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,500&display=swap" rel="stylesheet">
 <style>
   :root{
-    --dark-red:#6b0f1a;
-    --deep-red:#430a10;
-    --ember:#8c1c22;
-    --butter:#f1cf6a;
-    --butter-soft:#f6dd8e;
-    --butter-pale:#fbeec3;
-    --ink:#2a1410;
-    --cream-paper:#f9e9b9;
+    --dark-red:#46739e;      /* main soft blue */
+    --deep-red:#2f5379;      /* deep soft blue */
+    --ember:#7da6cf;         /* light soft blue */
+    --butter:#f6e5a6;
+    --butter-soft:#f8ecbb;
+    --butter-pale:#fcf4d9;
+    --ink:#1f2d3d;
+    --cream-paper:#faf1cf;
   }
   *{box-sizing:border-box; margin:0; padding:0; -webkit-tap-highlight-color:transparent;}
   html{
@@ -101,11 +101,11 @@
     align-items:center;
     gap:22px;
     padding:36px 26px 30px;
-    background:rgba(251,238,195,0.88);
+    background:rgba(252,244,217,0.88);
     backdrop-filter:blur(2px);
     -webkit-backdrop-filter:blur(2px);
     border-radius:28px;
-    box-shadow:0 18px 40px rgba(67,10,16,0.12);
+    box-shadow:0 18px 40px rgba(47,83,121,0.14);
     max-width:88vw;
   }
   .p1-title{
@@ -146,8 +146,8 @@
   .tap-hint{
     font-family:'Caveat', cursive;
     font-size:17px;
-    color:var(--ember);
-    opacity:.8;
+    color:var(--dark-red);
+    opacity:.85;
   }
 
   /* ===================== PAGE 2 ===================== */
@@ -157,7 +157,7 @@
     background:var(--butter-soft);
     border-radius:26px;
     padding:30px 26px 34px;
-    box-shadow: 0 30px 60px rgba(0,0,0,0.35), inset 0 0 0 1px rgba(255,255,255,0.4);
+    box-shadow: 0 30px 60px rgba(0,0,0,0.3), inset 0 0 0 1px rgba(255,255,255,0.4);
     text-align:center;
     position:relative;
   }
@@ -178,7 +178,7 @@
   .album-frame{
     width:100%;
     aspect-ratio:1/0.78;
-    background:#1c0c0c;
+    background:#1a2430;
     border-radius:14px;
     overflow:hidden;
     margin-bottom:20px;
@@ -207,7 +207,7 @@
   .progress-track{
     width:100%;
     height:3px;
-    background:rgba(107,15,26,0.25);
+    background:rgba(70,115,158,0.28);
     border-radius:4px;
     position:relative;
     margin-bottom:22px;
@@ -255,7 +255,7 @@
     justify-content:center;
     border:none;
     cursor:pointer;
-    box-shadow:0 10px 22px rgba(107,15,26,0.45);
+    box-shadow:0 10px 22px rgba(70,115,158,0.45);
     transition:transform .2s ease;
   }
   #playBtn:hover{ transform:scale(1.05); }
@@ -266,12 +266,12 @@
     font-family:'Caveat', cursive;
     color:var(--butter-pale);
     font-size:16px;
-    opacity:.85;
+    opacity:.9;
   }
 
   /* ===================== PAGE 3 (letter) ===================== */
   #page3{
-    background: radial-gradient(circle at 50% 0%, var(--ember) 0%, var(--deep-red) 55%, #2c0608 100%);
+    background: radial-gradient(circle at 50% 0%, var(--ember) 0%, var(--deep-red) 55%, #21405f 100%);
     padding:30px 18px;
   }
   .letter-wrap{
@@ -279,7 +279,7 @@
     max-height:min(88vh, 88dvh);
     background:var(--cream-paper);
     border-radius:6px;
-    box-shadow:0 30px 70px rgba(0,0,0,0.5);
+    box-shadow:0 30px 70px rgba(0,0,0,0.4);
     padding:24px 22px 22px;
     position:relative;
     display:flex;
@@ -301,7 +301,7 @@
     border-radius:50%;
     overflow:hidden;
     border:4px solid var(--dark-red);
-    box-shadow:0 8px 18px rgba(0,0,0,0.35);
+    box-shadow:0 8px 18px rgba(0,0,0,0.3);
     flex:none;
   }
   .letter-photo img{
@@ -324,7 +324,7 @@
     min-height:0;
   }
   .letter-scroll::-webkit-scrollbar{ width:5px; }
-  .letter-scroll::-webkit-scrollbar-thumb{ background:rgba(107,15,26,0.3); border-radius:4px; }
+  .letter-scroll::-webkit-scrollbar-thumb{ background:rgba(70,115,158,0.35); border-radius:4px; }
   #typewriter{
     font-family:'Cormorant Garamond', serif;
     font-size:17px;
@@ -358,7 +358,7 @@
     pointer-events:none;
   }
   .letter-next.show{ opacity:1; transform:translateY(0); pointer-events:auto; }
-  .letter-next:hover{ background:var(--ember); }
+  .letter-next:hover{ background:var(--deep-red); }
 
   /* ===================== PAGE 4 ===================== */
   #page4{ background: radial-gradient(circle at 50% 15%, var(--ember), var(--deep-red) 80%); padding:24px; }
@@ -367,7 +367,7 @@
     background:var(--butter-pale);
     border-radius:4px;
     padding:22px 20px 26px;
-    box-shadow:0 30px 70px rgba(0,0,0,0.5) , 0 0 0 1px rgba(0,0,0,0.05);
+    box-shadow:0 30px 70px rgba(0,0,0,0.4) , 0 0 0 1px rgba(0,0,0,0.05);
     position:relative;
   }
   .frame-tape{
@@ -409,7 +409,7 @@
     color:var(--butter-pale);
     font-size:17px;
     margin-top:18px;
-    opacity:.9;
+    opacity:.95;
   }
 
   audio{ display:none; }
@@ -453,14 +453,14 @@
                  C 50 460, 270 450, 270 570
                  C 270 670, 90 650, 80 760
                  C 73 840, 90 900, 90 980"
-              fill="none" stroke="#3b3034" stroke-width="46" stroke-linecap="round"/>
+              fill="none" stroke="#3a4a5e" stroke-width="46" stroke-linecap="round"/>
         <path d="M 70 -80
                  C 70 40, 260 10, 260 130
                  C 260 250, 50 230, 50 350
                  C 50 460, 270 450, 270 570
                  C 270 670, 90 650, 80 760
                  C 73 840, 90 900, 90 980"
-              fill="none" stroke="#fbeec3" stroke-width="2" stroke-linecap="round"
+              fill="none" stroke="#fcf4d9" stroke-width="2" stroke-linecap="round"
               stroke-dasharray="2 2" transform="translate(-23,0)" opacity="0.9"/>
         <path d="M 70 -80
                  C 70 40, 260 10, 260 130
@@ -468,7 +468,7 @@
                  C 50 460, 270 450, 270 570
                  C 270 670, 90 650, 80 760
                  C 73 840, 90 900, 90 980"
-              fill="none" stroke="#fbeec3" stroke-width="2" stroke-linecap="round"
+              fill="none" stroke="#fcf4d9" stroke-width="2" stroke-linecap="round"
               stroke-dasharray="2 2" transform="translate(23,0)" opacity="0.9"/>
         <path d="M 70 -80
                  C 70 40, 260 10, 260 130
@@ -476,7 +476,7 @@
                  C 50 460, 270 450, 270 570
                  C 270 670, 90 650, 80 760
                  C 73 840, 90 900, 90 980"
-              fill="none" stroke="#fbeec3" stroke-width="6" stroke-linecap="round"
+              fill="none" stroke="#fcf4d9" stroke-width="6" stroke-linecap="round"
               stroke-dasharray="16 14" opacity="0.95"/>
       </svg>
     </div>
@@ -492,7 +492,7 @@
                    C 54 22, 62 10, 72 4
                    C 84 -4, 100 4, 100 22
                    C 100 40, 86 62, 50 88 Z"
-                fill="#6b0f1a"/>
+                fill="#46739e"/>
         </svg>
       </button>
       <p class="tap-hint">tap the heart, my love</p>
@@ -504,11 +504,11 @@
     <div class="player-card">
       <div class="player-eyebrow">
         Wiles
-        <svg class="mini-heart" viewBox="0 0 100 90"><path d="M50 88 C14 62,0 40,0 22 C0 4,16 -4,28 4 C38 10,46 22,50 30 C54 22,62 10,72 4 C84 -4,100 4,100 22 C100 40,86 62,50 88 Z" fill="#6b0f1a"/></svg>
+        <svg class="mini-heart" viewBox="0 0 100 90"><path d="M50 88 C14 62,0 40,0 22 C0 4,16 -4,28 4 C38 10,46 22,50 30 C54 22,62 10,72 4 C84 -4,100 4,100 22 C100 40,86 62,50 88 Z" fill="#46739e"/></svg>
         Kaelion
       </div>
       <div class="album-frame">
-        <img src="namusic.jpg" alt="us" onerror="this.style.display='none'; this.parentElement.style.background='linear-gradient(135deg,#3a1c1c,#1c0c0c)'">
+        <img src="namusic.jpg" alt="us" onerror="this.style.display='none'; this.parentElement.style.background='linear-gradient(135deg,#2c3e52,#1a2430)'">
       </div>
       <p class="track-name">A Song For You</p>
       <p class="track-sub">our little playlist, just begun</p>
@@ -521,8 +521,8 @@
           <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M6 6h2v12H6zM20 6L9 12l11 6z"/></svg>
         </button>
         <button id="playBtn" aria-label="play">
-          <svg id="playIcon" viewBox="0 0 24 24" fill="#fbeec3"><path d="M8 5v14l11-7z"/></svg>
-          <svg id="pauseIcon" viewBox="0 0 24 24" fill="#fbeec3" style="display:none"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
+          <svg id="playIcon" viewBox="0 0 24 24" fill="#fcf4d9"><path d="M8 5v14l11-7z"/></svg>
+          <svg id="pauseIcon" viewBox="0 0 24 24" fill="#fcf4d9" style="display:none"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
         </button>
         <button class="ctrl-btn skip" aria-label="next">
           <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M16 6h2v12h-2zM4 6l11 6L4 18z"/></svg>
@@ -538,7 +538,7 @@
     <div class="letter-wrap">
       <div class="letter-tape"></div>
       <div class="letter-photo">
-        <img src="naavatar.jpg" alt="him" onerror="this.style.display='none'; this.parentElement.style.background='linear-gradient(135deg,#8c1c22,#430a10)'">
+        <img src="naavatar.jpg" alt="him" onerror="this.style.display='none'; this.parentElement.style.background='linear-gradient(135deg,#7da6cf,#2f5379)'">
       </div>
       <p class="letter-heading">for my boyfriend, with love</p>
       <div class="letter-scroll">
@@ -575,7 +575,7 @@
                    C 162 60, 188 28, 220 14
                    C 250 0, 294 18, 294 70
                    C 294 120, 260 180, 150 250 Z"
-                fill="none" stroke="#430a10" stroke-width="3" opacity="0.5"/>
+                fill="none" stroke="#2f5379" stroke-width="3" opacity="0.5"/>
         </svg>
         <p class="cap">our first month</p>
       </div>
@@ -602,7 +602,7 @@
                    C 162 60, 188 28, 220 14
                    C 250 0, 294 18, 294 70
                    C 294 120, 260 180, 150 250 Z"
-                fill="none" stroke="#430a10" stroke-width="3" opacity="0.5"/>
+                fill="none" stroke="#2f5379" stroke-width="3" opacity="0.5"/>
         </svg>
         <p class="cap">visual diary</p>
       </div>
